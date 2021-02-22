@@ -1,7 +1,7 @@
 FROM ubuntu
 
-RUN apt update
-RUN apt install -y python python-pip
+RUN apt-get update
+RUN apt-get install -y python3 python3-pip
 
 COPY requirements.txt /tmp/requirements.txt
 RUN python -m pip install -r /tmp/requirements.txt
